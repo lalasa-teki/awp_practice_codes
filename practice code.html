@@ -1,0 +1,342 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript prompt method</title>
+</head>
+<body>
+    <script>
+        function fun()
+        {
+            var a=prompt("Enter some text:");
+            document.write(a)
+            alert(a)
+            if(a!=NULL)
+            {
+                document.getElementById("para").innerHTML="welcome";
+
+            }
+        }
+    </script>
+    <body style="text-align:center">
+        <h1 style="color:red">HelloWorld</h1>
+        <h2>I am lalasa</h2>
+        <button onclick="fun()">clickme</button>
+        <p id="para"></p>!-->
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function validateform()
+    {
+        var n=document.forms["Studentform"]["name"].value
+        var r=document.forms["Studentform"]["rollno"].value
+        var a=document.forms["Studentform"]["age"].value
+        var m=document.forms["Studentform"]["mail"].value
+        //check for empty feilds
+        if(n==""||r=""||a=""||m=""){
+            alert("Please fill out all feilds");
+            return false;
+        }
+        // check age is a number
+        if(isNaN(a)){
+            alert("age is must be a number");
+            return false;
+        }
+        // check mail
+        if(!valid mail(m))
+        {
+            alert("please enter valid mail");
+            return false;
+        }
+        function validatemail(m)
+        {
+            var rc=//s+@+/./s+/;
+            return mail(m);
+        }
+    }
+    </script>
+<body>
+    <h1>Student form</h1>
+            <form name="Student form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name"><br />
+            <label for="rollno">rollno:</label>
+            <input type="text" name="rollid" id="rollno"><br />
+            <label for="age">age:</label>
+            <input type="text" name="age" id="age"><br />
+            <label for="mail">mail:</label>
+            <input type="text" name="mail" id="mail"><br />
+            <button onclick="validateform()">submit</button>
+            </form>
+</body>
+</html>!-->
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <title>Browser-Information</title>
+    </head>
+    <body>
+        <h1 class="B">JQuery</h1>
+        <h1 id="C"></h1>
+        <h1 class="D"></h1>
+        <script>
+            $(".B").text("Iam lalasa")
+            $("#C").text("my name")
+            document.write("Browser Name:"+Navigator.appName);
+            document.write("Browser Version:"+Navigator.appVersion);
+            document.write("User Agent:"+Navigator.useragent);
+            document.write("Platform:"+Navigator.platform);
+
+        </script>
+    </body>
+</html>!-->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+    </head>
+    <script>
+        function validateform(){
+            var name=document.myform.name.value;
+            var password=document.myform.password.value;
+            if(name==NULL||name==""){
+                alert("Name can't be blank");
+                return false;
+            }
+            else if(password.length<6){
+                alert("password must be atleast 6 characters long.");
+                return false;
+            }
+        }
+    </script>
+    <body>
+        <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()">
+            Name:<input type="text" name="name"><br/>
+            Password:<input type="password" name="password"><br/>
+            <input type="submit" value="register">
+        </form>
+    </body>
+</html>
+
+
+
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery effects</title>
+        <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function name() {
+             $('.m').text("who are you");
+            $('.m').css("background-color","red").css("color",'blue');
+            $('p').css({"color":"red","background-color":"black"});
+            $('#hi').click(function(){
+
+
+            $('p').hide(3000);
+             })
+             $('#sh').click(function(){
+            $('p').show(3000);
+             })
+            $('#hs').click(function(){
+            $('p').toggle(3000)
+            });
+            $('#an').click(function(){
+              $('.b2').toggle(3000)
+            })
+          });
+
+          </script>
+    </head>
+
+    <body>
+        <style>
+            .b2{
+              border-style: solid;
+              width: 150px;
+              height:100px;
+              border-color: darkturquoise;
+            }
+          </style>
+          </head>
+      <body>
+        <h1 class="B">Jquery</h1>
+        <h1 id="c"></h1>
+        <h1 class="m"></h1>
+        <h1></h1>
+        <h1></h1>
+
+        <p>This is jquesry class</p>
+        <p>This is jquesry class</p>
+        <p>This is jquesry class</p>
+        <p>This is jquesry class</p>
+        <p>This is jquesry class</p>
+
+        <button id="hi">Hide</button>
+        <button id="sh">show</button>
+        <button id="hs">hide and show</button>
+        <div class="b2"></div>
+        <button id="an">Animation</button>
+      </body>
+  </html>
+
+    </body>
+</html>!-->
+
+
+
+<!--<!DOCTYPE html>
+<html>
+    <head><title>Onclick method</title></head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+                alert("You just clicked the heading");
+        });
+    </script>
+</head>
+<body>
+    <h1>On() method</h1>
+    <h2>It is an example of jquery on() method</h2>
+    <p>Click the below heading</p>
+    <button onclick="fun()">Click me</button>
+</body>
+</html>!-->
+
+
+
+<!--<!DOCTYPE html>
+<html>
+    <head><title>mouse pointer</title></head>
+    <script src="//code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).on("mousemove",function(Event){
+            $("#table").text("pageX"+Event.pageX,"pageY"+Event.pageY)
+        });
+    </script>
+    <body>
+        <div id="doc"></div>
+    </body>
+</html>!-->
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <script src="//code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("p").click(function(event){
+                    $("span").text(event.timestamp);
+                });
+            })
+        </script>
+        <body>
+            <p>If you click on me, I will disappear</p>
+            <p>Click me away!</p>
+            <p>Click me!</p>
+            <p>The click event occured.
+                <span style="color:red">unknown</span>milliseconds
+            </p>
+        </body>
+    </head>
+</html>!-->
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <script src="text/javascript" src="//code.jquery.com/jquery-3.6.4.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $("p").contents().net("[node type(17).wrap]"[<i/>]);
+                });
+            </script>
+    </head>
+    <body>
+        <p>Hello <a href="https://java2.com/">Java2s</a>asdf</p>
+    </body>
+
+</html>!-->
+
+
+
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number table</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <form>
+            <label for="numbers">Enter a comma separated numbers</label>
+            <input type="text" id="numbers" name="numbers" required>
+            <button type="submit">Generate table </button>
+        </form>
+        <div id="table-container"></div>
+    </body>
+</html>!-->
+
+
+
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJAX and JSON</title>
+    </head>
+    <script type="application/javascript">
+        function load()
+        {
+            var url="https:/data.Jsontest.com/";
+            var request;
+            if(windows.xmlHTTPrequest){
+                request=new XMLHttpRequest();
+            }
+            else if(window.ActiveXobject){
+                request=new ActiveXobject("microobject.XMLHTTP");
+            }
+            request.onreadystatechange=function(){
+                if(request.readystate==4){
+                    var jsonobj=JSON.parse(request.responseText);
+                    document.getElementById("date").innerHTML=Jsonobj.date;
+                    document.getElementById("time").innerHTML=Jsonobj.time;
+                }
+            }
+            request.open("GET",url,true);
+            request.send();
+        }
+    </script>
+    <body>
+        Date:<span id="date"></span><br />
+        Time:<span id="time"></span><br />
+        <button type="button"onclick="load()">Load Information</button>
+
+
+    </body>
+</html>!-->
